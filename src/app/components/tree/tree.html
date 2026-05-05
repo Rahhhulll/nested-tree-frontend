@@ -1,0 +1,9 @@
+<ul class="tree-root">
+  <li *ngFor="let node of nodes">
+    {{ node.name }}
+    <app-tree
+      *ngIf="node.children?.length"
+      [nodes]="node.children">
+    </app-tree>
+  </li>
+</ul>

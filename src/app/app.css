@@ -1,0 +1,112 @@
+:host {
+  display: block;
+  padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tree-section {
+  margin: 0 0 10px;
+}
+
+.add-btn {
+  padding: 10px 16px;
+  background: #2563eb;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.add-btn:hover {
+  background: #1d4ed8;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  padding: 16px;
+}
+
+.modal-content h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.modal-content label {
+  display: block;
+  margin: 8px 0 4px;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  margin: 0 0 12px;
+}
+
+.modal-actions {
+  margin-top: 10px;
+}
+
+.modal-actions button {
+  padding: 10px 14px;
+  background: #e5e7eb;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  color: #111827;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.modal-actions button.primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.modal-actions button.primary:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  :host {
+    padding: 12px;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+}
