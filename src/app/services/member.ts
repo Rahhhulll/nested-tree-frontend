@@ -6,16 +6,18 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class Member {
-  private apiUrl = 'http://localhost:5000/api/members';
+
+  // 🔥 LIVE BACKEND URL (IMPORTANT)
+  private apiUrl = 'https://nested-tree-backend.onrender.com/api/members';
 
   constructor(private http: HttpClient) {}
 
-  // 🔥 GET members
+  // ✅ GET members
   getMembers(): Observable<any> {
     return this.http.get(this.apiUrl);
   }
 
-  // 🔥 ADD member
+  // ✅ ADD member
   addMember(data: any): Observable<any> {
     return this.http.post(this.apiUrl, data);
   }
